@@ -12226,11 +12226,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\FPT\\ASP.NET MVC\\HomeWork\\HomeWork1\\StudentsManagement\\StudentsManagement\\StudentsManagement.csproj",
+      "projectUniqueName": "E:\\FPT\\ASP.NET MVC\\Slider\\StudentManagement\\StudentsManagement\\StudentsManagement\\StudentsManagement.csproj",
       "projectName": "StudentsManagement",
-      "projectPath": "E:\\FPT\\ASP.NET MVC\\HomeWork\\HomeWork1\\StudentsManagement\\StudentsManagement\\StudentsManagement.csproj",
+      "projectPath": "E:\\FPT\\ASP.NET MVC\\Slider\\StudentManagement\\StudentsManagement\\StudentsManagement\\StudentsManagement.csproj",
       "packagesPath": "C:\\Users\\NDV_Luce\\.nuget\\packages\\",
-      "outputPath": "E:\\FPT\\ASP.NET MVC\\HomeWork\\HomeWork1\\StudentsManagement\\StudentsManagement\\obj\\",
+      "outputPath": "E:\\FPT\\ASP.NET MVC\\Slider\\StudentManagement\\StudentsManagement\\StudentsManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

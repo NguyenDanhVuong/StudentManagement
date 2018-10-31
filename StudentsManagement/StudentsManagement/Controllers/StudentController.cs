@@ -18,7 +18,8 @@ namespace StudentsManagement.Controllers
 
         public IActionResult Index()
         {
-            return new JsonResult(_context.Students.ToList());
+
+            return View(_context.Students.ToList());
         }
 
 
@@ -36,25 +37,11 @@ namespace StudentsManagement.Controllers
         }
 
         //Edit Student
-        [HttpGet("{id}")]
-        [Route("Student/Edit/{id}")]
-        public IActionResult Edit(long id)
-        {
-            var student = _context.Students.Find(id);
-            if (student == null)
-            {
-                return NotFound();
-            }
 
-            ViewData["id"] = student.Id;
-            ViewData["rollNumber"] = student.RollNumber;
-            ViewData["name"] = student.Name;
-            return View();
-        }
 
         // Update Student
         [HttpPost]
-        [Route("Student/Update/{id}")]
+        [Route("Student/Edit/{id}")]
         public IActionResult Update(long id, Student student)
         {
             var updateStudent = _context.Students.Find(id);
@@ -69,10 +56,6 @@ namespace StudentsManagement.Controllers
         public IActionResult Delete(long id)
         {
             var deleteStudent = _context.Students.Find(id);
-            if (deleteStudent == null)
-            {
-                return NotFound();
-            }
             _context.Students.Remove(deleteStudent);
             _context.SaveChanges();
             return Redirect("/Student/Index");

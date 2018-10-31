@@ -27,7 +27,7 @@ namespace StudentsManagement
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<StudentContext>(opt =>
-                opt.UseInMemoryDatabase("Students"));
+                opt.UseSqlServer(Configuration.GetConnectionString("StudentsManagementConnection")));
 
             services.Configure<CookiePolicyOptions>(options =>
             {

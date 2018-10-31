@@ -10,5 +10,7 @@ namespace StudentsManagement.Models
         public long Id { get; set; }
         public string RollNumber { get; set; }
         public string Name { get; set; }
+
+  
     }
 }
